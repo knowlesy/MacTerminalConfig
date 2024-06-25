@@ -19,3 +19,10 @@ Configuring your Mac Terminal to look a smidge better
 [zsh Auto Suggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
 [colorls](https://github.com/athityakumar/colorls#installation)
+
+passing in kubctl commands to zsh 
+
+```
+source <(kubectl completion zsh)  # set up autocomplete in zsh into the current shell
+echo '[[ $commands[kubectl] ]] && source <(kubectl completion zsh)' >> ~/.zshrc # add autocomplete permanently to your zsh shell
+```
